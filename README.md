@@ -5,7 +5,8 @@
 * Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * Install [Vagrant](https://www.vagrantup.com/downloads.html)
 * For Windows, install packer. `brew install packer`
-
+* `vagrant box add ubuntu/trusty64`
+* `vagrant box add ubuntu/xenial64`
 
 ```sh
 git clone https://github.com/fulcrumapp/vms.git

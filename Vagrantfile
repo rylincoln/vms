@@ -2,7 +2,7 @@ require 'json'
 
 Vagrant.configure(2) do |config|
   config.vm.define :ubuntu14 do |target|
-    target.vm.box = "trusty64"
+    target.vm.box = "ubuntu/trusty64"
     target.vm.provider "virtualbox" do |v|
       v.name = 'ubuntu14'
       v.memory = 4096
@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.define :ubuntu16 do |target|
-    target.vm.box = "trusty64"
+    target.vm.box = "ubuntu/xenial64"
     target.vm.provider "virtualbox" do |v|
       v.name = 'ubuntu16'
       v.memory = 4096
