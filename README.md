@@ -30,7 +30,7 @@ The machines defined in this repo are:
 
 * `ubuntu14`
 * `ubuntu16`
-* `win10
+* `win10`
 
 ```
 
