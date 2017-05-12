@@ -12,6 +12,28 @@ git clone https://github.com/fulcrumapp/vms.git
 cd vms
 ```
 
+### Starting/Stopping/Destroying
+
+To start up a machine, you run `vagrant up MACHINE`.
+
+The basic commands are:
+
+```
+vagrant up MACHINE        # starts machine
+vagrant halt MACHINE      # stops it, but doesn't destroy it
+vagrant destroy MACHINE   # destroys the machine so you can easily start over with vagrant up MACHINE
+
+vagrant ssh MACHINE       # SSH into the machine once it's booted
+```
+
+The machines defined in this repo are:
+
+* `ubuntu14`
+* `ubuntu16`
+* `win10
+
+```
+
 ### Ubuntu 14.04 LTS 64bit
 
 ```
