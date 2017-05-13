@@ -33,8 +33,6 @@ The machines defined in this repo are:
 * `ubuntu16`
 * `win10`
 
-```
-
 ### Ubuntu 14.04 LTS 64bit
 
 ```
