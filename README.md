@@ -1,4 +1,4 @@
-## Vritual Machines
+## Virtual Machines
 
 ### Setup
 
