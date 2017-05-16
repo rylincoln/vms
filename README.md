@@ -1,4 +1,4 @@
-## Vritual Machines
+## Virtual Machines
 
 ### Setup
 
@@ -32,8 +32,6 @@ The machines defined in this repo are:
 * `ubuntu14`
 * `ubuntu16`
 * `win10`
-
-```
 
 ### Ubuntu 14.04 LTS 64bit
 
