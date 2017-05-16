@@ -7,6 +7,8 @@ Vagrant.configure(2) do |config|
       v.name = 'ubuntu14'
       v.memory = 4096
       v.cpus = 2
+      v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+      v.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
     end
     target.vm.network :forwarded_port, guest: 3000, host: 30000
     target.vm.network :forwarded_port, guest: 3001, host: 30001
@@ -19,6 +21,8 @@ Vagrant.configure(2) do |config|
       v.name = 'ubuntu16'
       v.memory = 4096
       v.cpus = 2
+      v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+      v.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
     end
     target.vm.network :forwarded_port, guest: 3000, host: 30000
     target.vm.network :forwarded_port, guest: 3001, host: 30001
