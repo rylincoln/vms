@@ -55,6 +55,7 @@ cd packer-windows
 packer build windows_10.json
 vagrant box add win10-x64 windows_10_virtualbox.box
 ```
+**Note**: this fork https://github.com/StefanScherer/packer-windows.git points to a different version of the ISO which VirtualBox is able to download, if you have trouble.
 
 Then from the `vms` directory:
 
