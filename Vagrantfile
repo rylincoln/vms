@@ -29,6 +29,20 @@ Vagrant.configure(2) do |config|
     target.vm.network :forwarded_port, guest: 8080, host: 30002
   end
 
+  config.vm.define :ubuntu18 do |target|
+    target.vm.box = "ubuntu/bionic64"
+    target.vm.provider "virtualbox" do |v|
+      v.name = 'ubuntu18'
+      v.memory = 4096
+      v.cpus = 2
+      v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+      v.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
+    end
+    target.vm.network :forwarded_port, guest: 3000, host: 30000
+    target.vm.network :forwarded_port, guest: 3001, host: 30001
+    target.vm.network :forwarded_port, guest: 8080, host: 30002
+  end
+
   config.vm.define :win10 do |target|
     target.vm.box = "win10-x64"
     target.vm.provider "virtualbox" do |v|
