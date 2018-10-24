@@ -13,6 +13,7 @@ Vagrant.configure(2) do |config|
     target.vm.network :forwarded_port, guest: 3000, host: 30000
     target.vm.network :forwarded_port, guest: 3001, host: 30001
     target.vm.network :forwarded_port, guest: 8080, host: 30002
+    target.vm.network :forwarded_port, guest: 5432, host: 54321
   end
 
   config.vm.define :ubuntu16 do |target|
@@ -27,6 +28,7 @@ Vagrant.configure(2) do |config|
     target.vm.network :forwarded_port, guest: 3000, host: 30000
     target.vm.network :forwarded_port, guest: 3001, host: 30001
     target.vm.network :forwarded_port, guest: 8080, host: 30002
+    target.vm.network :forwarded_port, guest: 5432, host: 54321
   end
 
   config.vm.define :ubuntu18 do |target|
@@ -41,6 +43,7 @@ Vagrant.configure(2) do |config|
     target.vm.network :forwarded_port, guest: 3000, host: 30000
     target.vm.network :forwarded_port, guest: 3001, host: 30001
     target.vm.network :forwarded_port, guest: 8080, host: 30002
+    target.vm.network :forwarded_port, guest: 5432, host: 54321
   end
 
   config.vm.define :win10 do |target|
